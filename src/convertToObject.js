@@ -12,9 +12,7 @@ function convertToObject(sourceString) {
     .filter((item) => item.includes(':'))
     .reduce((acc, item) => {
       const [key, value] = item.split(':');
-
       acc[key.trim()] = value.trim();
-
       return acc;
     }, {});
 }
